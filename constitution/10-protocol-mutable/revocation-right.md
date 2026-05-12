@@ -29,7 +29,7 @@ Concrete implementation of the revocation guarantee in `identity_sovereignty` an
 
 ## Edge cases
 
-- **Past 24-hour window:** revocation no longer reverses effects, but user can still flag the record (for future audit + reputation impact on agent)
+- **Past 24-hour window:** revocation no longer reverses effects, but user can still flag the record (for future audit + standing impact on agent)
 - **Already-finalized vote:** if voting window has closed and the proposal is now in validator alignment check phase, retraction triggers a "vote count amendment" event (rare; voting window is usually shorter than 24h)
 - **Multi-party action:** if the action involved another user (e.g., Companion-to-Companion conversation), revocation invalidates the user's contribution but doesn't necessarily delete the other party's record
 
