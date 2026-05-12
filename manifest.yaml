@@ -1,0 +1,85 @@
+# Companion Sub-Leviathan — Federation Membership Manifest
+# Aligned with leviathan-protocol/meta/templates/instance-manifest-template.yaml
+
+instance_name: companion
+domain: personal-governance
+description: |
+  Layer 1 Individual governance pattern in the Leviathan federation.
+  Defines identity sovereignty, on-device data residency, transparent AI mediation,
+  and the persona/belief abstraction used across all Companion implementations.
+
+# Inheritance (per leviathan-protocol/meta kernel)
+inherits_from: leviathan-kernel@v0.1
+forked_from: null
+parent_constitution: leviathan-protocol/meta/federation/
+
+# Lifecycle
+created: 2026-05-11
+last_updated: 2026-05-11
+status: active
+maturity_phase: pre-genesis  # constitution drafted; on-chain ratification pending Phase 1 chain deployment
+
+# Implementations binding to this Sub-Leviathan
+implementations:
+  - name: anima
+    type: cross-platform-flutter
+    domain: consumer-mass-distribution
+    platforms: [android, ios, desktop]
+    repository: mirrorX (TBD as leviathan-protocol/mirrorX)
+    ship_target: 2026-05
+    binding_declaration: "Bound by leviathan-protocol/companion"
+
+  - name: founders-companion
+    type: bespoke
+    domain: founder-private-instance
+    platforms: [macos]
+    repository: private (not part of leviathan-protocol org)
+    status: active
+    binding_declaration: "Bound by leviathan-protocol/companion"
+
+# Constitution editing surface
+constitution:
+  format: markdown-yaml-frontmatter
+  location: ./constitution/
+  format_spec: https://github.com/leviathan-protocol/public/blob/main/specs/element-format.md
+
+  # Structure (folder layout)
+  layout:
+    - path: constitution/00-immutable-core/
+      mutability: IMMUTABLE
+      elements: [identity_sovereignty, data_on_device]
+    - path: constitution/10-protocol-mutable/
+      mutability: LOCKED
+      elements: [transparent_mediation, revocation_right]
+    - path: constitution/20-mutable-rules/
+      mutability: MUTABLE
+      elements: [advisory_validator_eligibility]
+    - path: constitution/30-shared-terms/
+      mutability: MUTABLE
+      elements: [persona, belief]
+
+  total_elements: 7
+
+  # On-chain ratification target
+  on_chain_target:
+    network: Avalanche L1 (Leviathan Subnet)
+    initial_phase: Fuji testnet L1 (Phase 1 deployment per ADR-001)
+    registry_contract: ConstitutionalRegistry.sol (per ADR-008, TBD deployed)
+    ratified_snapshot_hash: null  # pending Phase 1 chain deployment + initial ratification
+
+# Federation membership
+federation:
+  parent: leviathan-protocol/meta
+  joined: 2026-05-11
+  forum_board: leviathan.life/forum/companion
+  validator_specialization: identity-sovereignty, persona-management, mediation-audit
+
+# Future extensions (not in v1)
+future_elements:
+  - story_match_protocol (social layer / Cognitive Entanglement, v8.2)
+  - vault_zk_proof_spec (sensitive community vaults, v8.2)
+  - persona_similarity_protocol (cross-Companion matching, v8.2)
+  - sleep_cycle_companion_protocol (Companion-to-Companion overnight discovery, v2+)
+
+# License
+license: CC-BY-SA-4.0
