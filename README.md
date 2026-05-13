@@ -28,7 +28,7 @@ See `00-immutable-core/3-witness-mandate.md` for the mandate, `10-protocol-mutab
 
 | Implementation | Type | Repository | Status |
 |----------------|------|-----------|--------|
-| **Anima** | Cross-platform Flutter app (PC + iOS + Android) | [`mirrorX`](https://github.com/leviathan-protocol/mirrorX) (TBD) | v1 in development (target ship 2026-05) |
+| **Anima** | Cross-platform Flutter app (PC + iOS + Android) | [`leviathan-protocol/anima`](https://github.com/leviathan-protocol/anima) | v1 in development · Witness Mandate PR #12 (target ship 2026-05) |
 | **Founder's Companion** | Bespoke (Claude Code + markdown) | Private | Active |
 
 Multiple implementations CAN bind to the same Sub-Leviathan. The constitution defines what they must satisfy; each chooses its own architecture, language, and shipping mechanism.

@@ -25,9 +25,11 @@ implementations:
     type: cross-platform-flutter
     domain: consumer-mass-distribution
     platforms: [android, ios, desktop]
-    repository: mirrorX (TBD as leviathan-protocol/mirrorX)
+    repository: leviathan-protocol/anima
     ship_target: 2026-05
     binding_declaration: "Bound by leviathan-protocol/companion"
+    witness_seed: v1.0
+    witness_locked_framework: v1
 
   - name: founders-companion
     type: bespoke
