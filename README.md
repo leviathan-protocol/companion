@@ -57,7 +57,7 @@ constitution/
 
 Each element is Markdown + YAML frontmatter. Constitutional content sits above an `<hr>` separator; editorial context (reasoning, examples, implementation notes) below.
 
-See [`element-format.md` in the public coordination repo](https://github.com/leviathan-protocol/public/blob/main/specs/element-format.md) for the full spec.
+See [`docs/element-format.md` in the federation kernel](https://github.com/leviathan-protocol/meta/blob/main/docs/element-format.md) for the full spec.
 
 ## How constitutional changes work
 
@@ -86,5 +86,5 @@ CC BY-SA 4.0. Fork freedom is built into the protocol — see `00-immutable-core
 ## Related
 
 - [`leviathan-protocol/meta`](https://github.com/leviathan-protocol/meta) — Federation Leviathan (parent kernel)
-- [`leviathan-protocol/public`](https://github.com/leviathan-protocol/public) — Cross-repo coordination, ADRs, plans
+- [`leviathan-protocol/meta`](https://github.com/leviathan-protocol/meta) — Federation kernel + architecture overview + ADRs (cross-repo coordination)
 - [`leviathan.life`](https://leviathan.life) — Public website + forum

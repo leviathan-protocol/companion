@@ -43,7 +43,7 @@ implementations:
 constitution:
   format: markdown-yaml-frontmatter
   location: ./constitution/
-  format_spec: https://github.com/leviathan-protocol/public/blob/main/specs/element-format.md
+  format_spec: https://github.com/leviathan-protocol/meta/blob/main/docs/element-format.md
 
   # Structure (folder layout)
   layout:
