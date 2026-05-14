@@ -22,7 +22,7 @@ Both are editable in the same UI. Both are versioned. Both are visible. The user
 
 The Witness inherits a **Locked Framework** (honesty over flattery, memory ethics, crisis grounding, no silent override, constitution transparency, meta-rule lock) that cannot be edited by user or AI. Users may add, edit, or delete any non-locked rule; the floor is constitutional, the ceiling is sovereign.
 
-See `00-immutable-core/3-witness-mandate.md` for the mandate, `10-protocol-mutable/witness-locked-framework.md` for the locked rules, and `20-mutable-rules/witness-default-seed.md` for the first-run defaults.
+See `principles/witness-mandate.md` for the mandate, `rules/witness-locked-framework.md` for the locked rules, and `rules/witness-default-seed.md` for the first-run defaults.
 
 ## Implementations bound to this Sub-Leviathan
 
@@ -35,23 +35,26 @@ Multiple implementations CAN bind to the same Sub-Leviathan. The constitution de
 
 ## Constitution structure
 
+Element type at folder level. Mutability tier (IMMUTABLE / LOCKED / MUTABLE) in YAML frontmatter of each file.
+
 ```
 constitution/
-├── 00-immutable-core/          ← IMMUTABLE: fork-only-changeable foundational guarantees
-│   ├── 1-identity-sovereignty.md
-│   ├── 2-data-on-device.md
-│   └── 3-witness-mandate.md      ← two-constitution structure for AI behavior (2026-05-13)
-├── 10-protocol-mutable/         ← LOCKED: high-bar governance vote required to change
-│   ├── transparent-mediation.md
-│   ├── revocation-right.md
-│   └── witness-locked-framework.md  ← 6 locked rules every Witness inherits
-├── 20-mutable-rules/            ← MUTABLE: regular governance vote
-│   ├── advisory-validator-eligibility.md
-│   └── witness-default-seed.md      ← Witness Constitution default v1.0
-└── 30-shared-terms/             ← MUTABLE: terminology used across all Companion implementations
-    ├── persona.md
-    └── belief.md
+├── terms/                       # @TERM — definitional vocabulary
+│   ├── belief.md                  (MUTABLE)
+│   └── persona.md                 (MUTABLE)
+├── principles/                  # #PRINCIPLE — guiding values
+│   ├── identity-sovereignty.md    (IMMUTABLE)
+│   ├── data-on-device.md          (IMMUTABLE)
+│   ├── witness-mandate.md         (IMMUTABLE — two-constitution model, 2026-05-13)
+│   ├── transparent-mediation.md   (LOCKED)
+│   └── revocation-right.md        (LOCKED)
+└── rules/                       # !RULE — operational + metarules
+    ├── witness-locked-framework.md  (LOCKED — 6 locked rules every Witness inherits)
+    ├── advisory-validator-eligibility.md  (MUTABLE)
+    └── witness-default-seed.md      (MUTABLE — Witness Constitution default v1.0)
 ```
+
+(Future element types: `shadows/` for anti-patterns, `protocols/` for situational sets. Not yet present in Companion L2.)
 
 ## File format
 
