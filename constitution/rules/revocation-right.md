@@ -7,7 +7,7 @@ current_version: 1
 contentURI: null
 ---
 
-User may revoke any mediated action (auto-vote, agent-issued message, persona-match exposure, delegated authority) within 24 hours of the action. Revocation requested via the implementation's audit surface triggers: (1) cleanup of the action's downstream effects where reversible, (2) flagging of the action as revoked in immutable logs, (3) protocol-level retraction (e.g., on-chain vote retraction within voting window).
+User may revoke any mediated action (auto-vote, agent-issued message, persona-match exposure, delegated authority) within 24 hours of the action. Revocation requested via the implementation's audit surface triggers: (1) cleanup of the action's downstream effects where reversible, (2) flagging of the action as revoked in immutable logs, (3) protocol-level retraction (e.g., forum-registry vote retraction within the voting window; on-chain retraction is a declared, not-yet-live target).
 
 <!-- BELOW THIS LINE: editorial context. Not stored on-chain. -->
 

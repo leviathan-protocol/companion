@@ -7,7 +7,7 @@ current_version: 1
 contentURI: null
 ---
 
-A user's Anima device may act as an advisory-tier validator (submitting non-authoritative verdicts on forum proposals) only when all conditions hold: (1) explicit user opt-in via Settings, (2) device on charger, (3) device on WiFi, (4) device idle ≥10 minutes, (5) user has minimum enactment threshold (≥10 manual enactments), (6) submission rate-limited to ≤20 advisory verdicts per device per 24h.
+A user's Anima device may act as an advisory-tier witness (submitting non-authoritative attestations on forum proposals) only when all conditions hold: (1) explicit user opt-in via Settings, (2) device on charger, (3) device on WiFi, (4) device idle ≥10 minutes, (5) user has minimum enactment threshold (≥10 manual enactments), (6) submission rate-limited to ≤20 advisory verdicts per device per 24h.
 
 <!-- BELOW THIS LINE: editorial context. Not stored on-chain. -->
 

@@ -7,7 +7,7 @@ current_version: 1
 contentURI: null
 ---
 
-The user owns their identity, values, beliefs, and persona. No implementation, protocol, validator, or third party may access unencrypted personal data without explicit consent. Identity authority is rooted in the user's keys (wallet or passkey); revocation is always possible and always honored.
+The user owns their identity, values, beliefs, and persona. No implementation, protocol, witness, or third party may access unencrypted personal data without explicit consent. Identity authority is rooted in the user's keys (wallet or passkey); revocation is always possible and always honored.
 
 <!-- BELOW THIS LINE: editorial context. Not stored on-chain. -->
 
